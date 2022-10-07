@@ -1,0 +1,166 @@
+:root {
+  --primary-text-color: #757575;
+  --titel-text-color: #212121;
+  --secondary-text-color:#FFFFFF;
+  --accent-color: #2196f3;
+  --primary-site-background: #f5f5f5;
+  --secondary-site-backgroud: #2f303a;
+
+}
+
+/*головний колір сторінки  */
+
+body {
+  color: var(--primary-text-color);
+  font-family: Roboto, sans-serif;
+  letter-spacing: 0.03em;
+}
+
+/*логотип*/
+
+.logo-link {
+  color: #212121;
+  font-family: Raleway, sans-serif;
+  font-size: 26px;
+  line-height: 1.19;
+}
+.logo {
+  color: var(--accent-color);
+}
+
+/* навігація сайту */
+
+.site-nav .link {
+  color: #212121;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+
+.site-nav .link:hover,
+.link:focus {
+  color: var(--accent-color);
+}
+
+.site-nav .link.current {
+  color: var(--accent-color);
+}
+
+ul {
+  list-style: none;
+}
+
+/* навігація контактів */
+
+.header-contacts .contact-list {
+  color: var(--primary-text-color);
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+
+.header-contacts .contact-list:hover,
+.contact-list:focus {
+  color: var(--accent-color);
+}
+
+/* основний зміст студія*/
+
+.main-section {
+  background: var(--secondary-site-backgroud);
+}
+.main-header {
+  color: var(--secondary-text-color);
+  text-transform: uppercase;
+  font-size: 44px;
+  line-height: 1.4;
+  letter-spacing: 0.06em;
+  text-align: center;
+}
+
+.titel {
+  color: var(--titel-text-color);
+}
+
+.titel-text {
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+.button {
+  color: #212121;
+  cursor: pointer;
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+.button .primary:hover,
+.primary:focus {
+  color: var(--secondary-text-color);
+  background: var(--accent-color);
+}
+
+.occupation-titel {
+  color: var(--titel-text-color);
+  font-size: 36px;
+  line-height: 1.4;
+  text-align: center;
+}
+
+.team-titel {
+  color: var(--titel-text-color);
+  font-size: 36px;
+  line-height: 1.4;
+  text-align: center;
+}
+
+.team-name {
+  color: var(--titel-text-color);
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+.team-position {
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+/* Портфоліо */
+
+.project-titel {
+  color: var(--titel-text-color);
+}
+
+.project {
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+/*Футер*/
+
+.footer-nav {
+  background: var(--secondary-site-backgroud);
+}
+
+.footer-logo {
+  color: var(--secondary-text-color);
+  font-family: Raleway, sans-serif;
+  font-size: 26px;
+  line-height: 1.2;
+}
+
+.card-address {
+font-style: normal;
+
+}
+.footer-list .footer-address {
+  color:var(--secondary-text-color);
+}
+
+.footer-list .footer-contact {
+  color: rgba(255, 255, 255, 0.6);
+}
