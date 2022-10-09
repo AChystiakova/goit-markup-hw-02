@@ -1,10 +1,11 @@
 :root {
   --primary-text-color: #757575;
   --titel-text-color: #212121;
-  --secondary-text-color:#FFFFFF;
   --accent-color: #2196f3;
+  --main-site-color: #FFFFFF;
   --primary-site-background: #f5f5f5;
   --secondary-site-backgroud: #2f303a;
+  --team-section-backgroung:#F5F4FA;
 
 }
 
@@ -14,12 +15,14 @@ body {
   color: var(--primary-text-color);
   font-family: Roboto, sans-serif;
   letter-spacing: 0.03em;
+  background: var(--main-site-color)
 }
 
 /*логотип*/
 
 .logo-link {
-  color: #212121;
+  color: var(--titel-text-color);
+  text-decoration: none;
   font-family: Raleway, sans-serif;
   font-size: 26px;
   line-height: 1.19;
@@ -31,7 +34,7 @@ body {
 /* навігація сайту */
 
 .site-nav .link {
-  color: #212121;
+  color: var(--titel-text-color);
   text-decoration: none;
   font-weight: 500;
   font-size: 14px;
@@ -73,13 +76,27 @@ ul {
 .main-section {
   background: var(--secondary-site-backgroud);
 }
+
 .main-header {
-  color: var(--secondary-text-color);
+  color: var(--main-site-color);
+  font-weight: 900;
   text-transform: uppercase;
   font-size: 44px;
   line-height: 1.4;
   letter-spacing: 0.06em;
   text-align: center;
+}
+
+.main-button {
+  color: var(--main-site-color);
+  background-color: #2196f3;
+  cursor: pointer;
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.8;
+  text-align: center;
+  letter-spacing: 0.06em;
 }
 
 .visually-hidden {
@@ -94,8 +111,13 @@ ul {
   clip-path: inset(50%);
   margin: -1px;
 }
+
+
 .titel {
   color: var(--titel-text-color);
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: calc(16 / 14);
 }
 
 .titel-text {
@@ -103,24 +125,20 @@ ul {
   line-height: 1.7;
 }
 
-.button {
-  color: #212121;
-  cursor: pointer;
-  font-size: 16px;
-  line-height: 1.8;
-}
-
-.button .primary:hover,
-.primary:focus {
-  color: var(--secondary-text-color);
-  background: var(--accent-color);
-}
-
 .occupation-titel {
   color: var(--titel-text-color);
   font-size: 36px;
   line-height: 1.4;
   text-align: center;
+}
+
+.team {
+  background: var(--team-section-backgroung);
+
+}
+
+.team-img {
+  background: var(--main-site-color);
 }
 
 .team-titel {
@@ -143,8 +161,28 @@ ul {
 
 /* Портфоліо */
 
+.filter-button {
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+  text-align: center;
+  letter-spacing:inherit;
+  color: var(--titel-text-color);
+  background: var(--team-section-backgroung);
+}
+
+.filter-button:hover,
+.filter-button:focus {
+  color: var(--main-site-color);
+  background: var(--accent-color);
+}
+
 .project-titel {
   color: var(--titel-text-color);
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
 }
 
 .project {
@@ -159,8 +197,9 @@ ul {
 }
 
 .footer-logo {
-  color: var(--secondary-text-color);
+  color: var(--main-site-color);
   font-family: Raleway, sans-serif;
+  text-decoration: none;
   font-size: 26px;
   line-height: 1.2;
 }
@@ -169,10 +208,18 @@ ul {
 font-style: normal;
 
 }
+
 .footer-list .footer-address {
-  color:var(--secondary-text-color);
+  color:var(--main-site-color);
+  text-decoration: none;
+  font-size: 14px;
+  line-height: calc(24 / 14);
+
 }
 
 .footer-list .footer-contact {
   color: rgba(255, 255, 255, 0.6);
+  text-decoration: none;
+  font-size: 14px;
+  line-height: calc(24 / 14);
 }
