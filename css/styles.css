@@ -6,7 +6,7 @@
   --primary-site-background: #f5f5f5;
   --secondary-site-backgroud: #2f303a;
   --team-section-backgroung:#F5F4FA;
-
+  --main-button-color: #188CE8;
 }
 
 /*головний колір сторінки  */
@@ -98,6 +98,13 @@ ul {
   text-align: center;
   letter-spacing: 0.06em;
 }
+
+.main-button:hover,
+.main-button:focus {
+
+  background: var(--main-button-color);
+}
+
 
 .visually-hidden {
   position: absolute;
